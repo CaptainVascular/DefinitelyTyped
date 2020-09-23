@@ -24,6 +24,12 @@ export interface QRCodeOptions {
      */
     errorCorrectionLevel?: QRCodeErrorCorrectionLevel;
     /**
+     * Mask pattern used to mask the symbol.
+     * Possible values are 0, 1, 2, 3, 4, 5, 6, 7.
+     * If not specified the more suitable value will be calculated.
+     */
+    maskPattern?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
+    /**
      * Helper function used internally to convert a kanji to its Shift JIS value.
      * Provide this function if you need support for Kanji mode.
      */
